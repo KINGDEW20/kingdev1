@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styl.css">
+</head>
+<body>
+    <header>
+        <h1>Vue evvents</h1>
+    </header>
+    <section id="Good">
+        <h2>Events in Action</h2>
+        <button v-on:click="add(5)">Add</button>
+        <button v-on:click="reduce(5)">Reduce</button>
+        <p>Result:{{ counter }}</p>
+        <input type="text" v-on:input="setName">
+        <p>Your name:{{ name}}</p>
+        <input type="text" v-on:input="surName" >
+        <p>SourName:{{sourname}}</p>
+    </section>
+    <script src="https://unpkg.com/vue@next"></script>
+    <script src="app.js"></script>
+</body>
+</html>

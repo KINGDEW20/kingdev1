@@ -1,0 +1,34 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing:border-box;
+}
+body{
+    background-color:blue;
+}
+.container{
+    margin-top: 100px;
+    display: flex;
+}
+.moon{
+    
+    margin-left: 300px;
+    width:500px ;
+    height:500px;
+    border-radius:50%;
+    background-color:blue;
+    z-index: 10;
+}
+.moon:hover{
+    transform: rotateY(360deg);
+}
+.white-moon{
+    margin-left: -450px;
+    width:500px ;
+    height:500px;
+    border-radius:50%;
+    background-color:white;
+}
+.white-moon:hover{
+    transform: rotateY(360deg);
+}

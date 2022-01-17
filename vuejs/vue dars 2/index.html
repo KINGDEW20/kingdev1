@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vuejs</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="Good">
+        <header>
+            <h1>Vue kursni biz bilan boshlang</h1>
+           </header>
+           <section>
+               <h2>Men haqimda</h2>
+               <img v-bind:src='ImageUrl'>
+               <p>{{name}}</p>
+               <p>{{surname}}</p>
+               <p>{{age}}</p>
+               <p>Besh yildan keyingi ma'lomot</p>
+               <button v-on:click="age = 13, {{ImageUrl1}}">5 yil oldin </button>
+               <button v-on:click="age = 18  ">hozirgi </button>
+               <button v-on:click="age = 23  ">5 yil yildan keyin</button>
+           </section>
+    </div> 
+    <script src="https://unpkg.com/vue@next"></script>
+    <script src="index.js"></script>
+</body>
+</html>
